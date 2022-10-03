@@ -15,6 +15,10 @@ const script = () => {
         {
             alert("Введите данные!");
         }
+        else if (inputData.value < 0)
+        {
+            alert("Введите неотрицательное число!");
+        }
         else
         {
             faceAreaRes.innerHTML = `${(inputData.value ** 2).toFixed(2)}`;
